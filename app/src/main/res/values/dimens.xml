@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headingSize">30dp</dimen>
+    <dimen name="contentSize">20dp</dimen>
+    <dimen name="titleSize">25dp</dimen>
+</resources>
