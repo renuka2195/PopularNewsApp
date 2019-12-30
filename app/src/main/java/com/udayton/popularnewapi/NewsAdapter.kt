@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rxjava2newsapi.model.Article
+import com.squareup.picasso.Picasso
 import com.udayton.popularnewapi.R
 import kotlinx.android.synthetic.main.news_item.view.*
 
@@ -22,6 +23,11 @@ class NewsAdapter(val items: ArrayList<Article>) : RecyclerView.Adapter<NewsAdap
     fun onBindViewHolder(viewHolder: ItemHolder, position: Int) {
         val article = items.get(position)
         viewHolder.bind(article)
+
+        Picasso.
+            with(viewHolder.itemView.context).
+            load(article.urlToImage).
+            into(viewHolder.itemView.urlImage)
     }
 
     fun add(list: ArrayList<Article>) {
