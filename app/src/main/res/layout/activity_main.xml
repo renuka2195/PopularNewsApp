@@ -25,6 +25,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="serif-monospace"
+                    android:gravity="center"
                     android:text="@string/top_heading"
                     android:textColor="@color/cardview_dark_background"
                     android:textSize="@dimen/headingSize" />
